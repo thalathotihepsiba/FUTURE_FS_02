@@ -1,0 +1,115 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+    margin:0;
+    text-align:center;
+}
+
+
+header{
+    background:#2563eb;
+    color:white;
+    padding:20px;
+}
+
+
+.login-box,
+.form-box{
+    background:white;
+    width:350px;
+    margin:30px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+
+input, textarea, select{
+
+    width:90%;
+    padding:10px;
+    margin:8px;
+    border:1px solid #ccc;
+    border-radius:5px;
+
+}
+
+
+textarea{
+    height:80px;
+}
+
+
+button{
+
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+.hidden{
+    display:none;
+}
+
+
+table{
+
+    width:90%;
+    margin:20px auto;
+    background:white;
+    border-collapse:collapse;
+
+}
+
+
+th,td{
+
+    border:1px solid #ddd;
+    padding:12px;
+
+}
+
+
+th{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+
+.delete-btn{
+
+    background:red;
+
+}
+
+
+@media(max-width:600px){
+
+table{
+
+font-size:12px;
+
+}
+
+.form-box,
+.login-box{
+
+width:80%;
+
+}
+
+}
