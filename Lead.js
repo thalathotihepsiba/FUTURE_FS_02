@@ -12,12 +12,17 @@ const LeadSchema = new mongoose.Schema({
     required: true
   },
 
-  phone: {
+  source: {
     type: String,
     required: true
   },
 
-  message: {
+  status: {
+    type: String,
+    required: true
+  },
+
+  notes: {
     type: String,
     required: true
   }
