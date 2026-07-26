@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Lead Management System - Mini CRM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Client Lead Management System</h1>
+        <p>Mini CRM Dashboard</p>
+    </header>
+
+
+    <!-- Login Section -->
+    <section class="login-box">
+        <h2>Admin Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+    </section>
+
+
+    <!-- CRM Dashboard -->
+    <section id="dashboard" class="hidden">
+
+        <h2>Add New Lead</h2>
+
+        <div class="form-box">
+
+            <input type="text" id="name" placeholder="Client Name">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <input type="text" id="source" placeholder="Lead Source">
+
+            <select id="status">
+                <option value="New">New</option>
+                <option value="Contacted">Contacted</option>
+                <option value="Converted">Converted</option>
+            </select>
+
+            <textarea id="notes" placeholder="Notes / Follow-up"></textarea>
+
+            <button onclick="addLead()">Add Lead</button>
+
+        </div>
+
+
+        <h2>Lead List</h2>
+
+
+        <input 
+        type="text" 
+        id="search"
+        placeholder="Search Lead..."
+        onkeyup="searchLead()">
+
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Source</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+
+            <tbody id="leadTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
