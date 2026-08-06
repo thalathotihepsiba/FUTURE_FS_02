@@ -1,7 +1,5 @@
 # FUTURE_FS_02
 
-**Future Interns – Full Stack Web Development Internship**
-
 # 🚀 Client Lead Management System (Mini CRM)
 
 > **Developed as part of the Future Interns – Full Stack Web Development Internship**
